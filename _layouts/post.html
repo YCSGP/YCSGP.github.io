@@ -1,117 +1,64 @@
----
-layout: compress
----
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
 
-{% include head.html %}
+<body class="post">
 
-<body class="site">
+{% include _browser-upgrade.html %}
 
-{% if site.google_tag_manager %}
+{% include _navigation.html %}
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-{% endif %}
 
-{% include header.html %}
-
-  {% if page.featured-img %}
-  <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg">
-  {% else %}
-  <div class="hero dark-bg">
-  {% endif %}
-    <div class="hero__wrap">
-      {% if post.categories or page.categories %}
-        <div class="hero__categories">
-          {% if post %}
-            {% assign categories = post.categories %}
-          {% else %}
-            {% assign categories = page.categories %}
-          {% endif %}
-          {% for category in categories %}
-            <a class="label" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-            {% unless forloop.last %}&nbsp;{% endunless %}
-          {% endfor %}
-        </div>
-      {% endif %}
-      <h1 class="hero__title">{{ page.title }}</h1>
-      <p class="hero__meta">
-        <span>
-          <time>{{ page.date | date_to_string }}</time>&nbsp;&middot;
-        </span>
-        <span>
-            {% assign words = content | number_of_words %}
-              {% if words < 360 %}
-                1 min
-              {% else %}
-                {{ words | divided_by:180 }} mins
-            {% endif %} read
-        </span>
-      </p>
-    </div>
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
   </div>
+  <article class="post">
+    <div class="headline-wrap">
+      {% if page.link %}
+        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1><a href="{{ site.github.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      {{ content }}
+      <hr />
+      <footer role="contentinfo">
+        {% if page.share != false %}{% include _social-share.html %}{% endif %}
+        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  {% if site.owner.disqus-shortname and page.comments == true %}
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  {% endif %}
+  </article>
+</div><!-- /#main -->
 
-  <main class="site__content">
-    <div class="container">
-      <article class="post-content" itemprop="articleBody">
+<div class="footer-wrap">
+  {% if site.related_posts.size > 0 %}
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.github.url }}/posts/">View all posts</a>)</small></h4>
+    <ul>
+    {% for post in site.related_posts limit:3 %}
+      <li><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  {% endif %}
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
 
-        {{ content }}
+{% include _scripts.html %}
 
-      </article>
-      <div class="post-content controls__inner">
-        <div class="controls__item prev">
-          {% if page.previous.url %}
-
-          <span>Previous</span>
-          <a href="{{page.previous.url | relative_url }}">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
-                    <path fill="fillColor" d="M5.647 1.718c.37-.434.323-1.09-.106-1.465A1.016 1.016 0 0 0 4.095.36L.25 4.875a1.05 1.05 0 0 0 .017 1.378l3.95 4.407c.38.424 1.03.456 1.448.07a1.05 1.05 0 0 0 .07-1.468l-3.34-3.725 3.253-3.819z"/>
-                  </svg>
-              </span>
-            {{page.previous.title | strip_html | truncate: 30}}
-          </a>
-          {% endif %}
-        </div>
-
-        <div class="controls__item next">
-          {% if page.next.url %}
-          <span>Next</span>
-          <a href="{{page.next.url | relative_url }}">
-            {{page.next.title | strip_html | truncate: 30}}
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
-                  <path fill="#fillColor" d="M.353 9.282c-.37.434-.323 1.09.106 1.465a1.016 1.016 0 0 0 1.446-.107L5.75 6.125a1.05 1.05 0 0 0-.017-1.378L1.784.34A1.015 1.015 0 0 0 .336.27a1.05 1.05 0 0 0-.07 1.468l3.34 3.725L.353 9.282z"/>
-                </svg>
-              </span>
-          </a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-
-    {% if site.disqus.shortname %}
-
-    <div class="comments">
-      <div class="container">
-        <div class="post-content">
-
-          {% include disqus.html %}
-
-        </div>
-      </div>
-    </div>
-
-    {% endif %}
-
-  </main>
-
-  {% include footer.html %}
-  {% include mathjax.html %}
 </body>
-
 </html>

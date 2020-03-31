@@ -1,43 +1,46 @@
----
-layout: compress
----
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
 
-  {% include head.html %}
+<body class="page">
 
-  <body class="site">
+{% include _browser-upgrade.html %}
 
-    {% if site.google_tag_manager %}
+{% include _navigation.html %}
 
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
 
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article class="page">
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+      {{ content }}
+      {% if page.share != false %}
+        <hr />
+        {% include _social-share.html %}
+      {% endif %}
+    </div><!-- /.article-wrap -->
+    {% if site.owner.disqus-shortname and page.comments == true %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
     {% endif %}
+  </article>
+</div><!-- /#index -->
 
-    {% include header.html %}
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
 
-    <div class="hero--small">
-      <div class="hero__wrap">
-        <h1 class="hero__title">{{ page.title }}</h1>
-      </div>
-    </div>
-    <main class="site__content">
+{% include _scripts.html %}
 
-      <div class="container">
-        <div class="page-content">
-
-          {{ content }}
-
-        </div>
-      </div>
-
-    </main>
-
-    {% include footer.html %}
-
-  </body>
-
+</body>
 </html>
