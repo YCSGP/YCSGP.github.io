@@ -1,15 +1,15 @@
 # Site wide configuration
 
-title: Site Title
+title: HONGYU ZHAO'S LAB
 locale: en_US
-logo: # filename of a logo image that has been placed into your images directory
+logo: yale-blue.png# filename of a logo image that has been placed into your images directory
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
-  name: Your Name
+  name: Hongyu Zhao, Ph.D.
   avatar: bio-photo.jpg
-  bio: "A brief description of yourself."
-  email: #emailaddress
+  bio: "Department Chair and Ira V. Hiscock Professor of Biostatistics, Professor of Genetics and Professor of Statistics and Data Science"
+  email: hongyu.zhao@yale.edu
   # Do not include the @ symbol in your Twitter username
   twitter: #username
   linkedin: #username
@@ -42,7 +42,7 @@ owner:
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
-highlight-color: '#CC0000'
+highlight-color: '#0f4d92'
 lowlight-color: '#000'
 
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
