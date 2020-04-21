@@ -11,7 +11,9 @@ Including 2 books, 458 peer reviewed journal articles, 24 refereed
 proceeding articles, 3 letters, 21 journal review articles, and 28 book
 chapters.
 
-[**Books (2):**]({{ site.baseurl }}{% link softwares.html %})
+Please see [Research]({{ site.baseurl }}{% link softwares.html %}) section for selected publications.
+
+**Books (2):**
 
 \[1\] S. Lin, **H. Zhao** (eds) (2009) *Handbook of Statistical
 Genetics*. Springer-Verlag Berlin Heidelberg.

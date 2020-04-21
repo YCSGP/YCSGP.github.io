@@ -2,8 +2,8 @@
 - title: Home
   url: /
 
-- title: Presentations
-  url: /presentations/
+- title: Research
+  url: /research/
 
 - title: Publications
   url: /publications/
@@ -11,5 +11,5 @@
 - title: Softwares
   url: /softwares/
 
-- title: Blog
-  url: /blog/
+- title: Posts
+  url: /posts/
