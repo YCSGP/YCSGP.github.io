@@ -82,10 +82,8 @@
   photo: geyu.jpg
   info: PhD Student, Computational Biology, started August 2017
   email: geyu.zhou@yale.edu
-  number_educ: 0
-  education1:
-  education2:
-  education3:
+  number_educ: 1
+  education1: Bachelor of Science, Nanjing University
   
 - name: Hongyu (Eddie) Li
   photo: hongyu.jpg
