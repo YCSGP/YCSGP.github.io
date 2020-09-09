@@ -1,0 +1,18 @@
+# Site navigation links
+- title: Home
+  url: /
+
+- title: Research
+  url: /research/
+
+- title: Members
+  url: /members/
+
+- title: Publications
+  url: /publications/
+
+- title: Softwares
+  url: /softwares/
+
+- title: Posts
+  url: /posts/
