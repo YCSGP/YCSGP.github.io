@@ -1,0 +1,17 @@
+- name: Wei Jiang
+  photo: weijiang.jpg
+  info: Postdoctoral Associate
+  email: w.jiang@yale.edu
+  number_educ: 3
+  education1: PhD/Postdoc in Electronic and Computer Engineering, HKUST
+  education2: B.Eng. in Automation, Tsinghua University
+  education3: APBC 2016 Best Paper Award
+
+- name: Jianlei Gu
+  photo: jianlei.jpg
+  info: Postdoctoral Fellow
+  email: jianlei.gu@yale.edu
+  number_educ: 0
+
+
+
