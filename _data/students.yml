@@ -8,9 +8,16 @@
 #  education3:
 #  education4:
 
-- name: Rosanne Wijgman
+- name: Zhaolong Yu
   photo: rock.jpg
-  info: Master student
-  email: rosanne.wijgman@student.ru.nl
+  info: PhD student
+  email: zhaolong.yu@yale.edu
+  number_educ: 0
+  education1: 
+  
+- name: Hongyu Li
+  photo: rock.jpg
+  info: PhD student
+  email: hongyu.li@yale.edu
   number_educ: 0
   education1:
