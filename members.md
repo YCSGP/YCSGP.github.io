@@ -129,7 +129,7 @@ layout: gridlay
 </div>
 {% endif %}
 
-# Lab Alumni
+# Former Members
 
 ## Doctoral Students
 {% for member in site.data.alumni_phd %}
