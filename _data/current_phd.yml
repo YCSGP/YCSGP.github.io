@@ -115,4 +115,16 @@
   email: yuhan.xie@yale.edu
   number_educ: 0
     
-    
+- name: Osman Moneer
+  photo: osman.jpg
+  info: M.D. Candidate at Yale School of Medicine
+  email: osman.moneer@yale.edu
+  number_educ: 4
+  education1: B.A. in Chemical Physics, Biology from Columbia University 
+  education2: Joined Zhao research group in 2020
+  education3: Studying cancer immunogenomics
+  education4: Currently working with Daiwei to investigate a theorized "self-immunoediting" effect in tumors
+
+
+
+       
