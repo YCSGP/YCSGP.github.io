@@ -11,7 +11,7 @@ Including 2 books, 458 peer reviewed journal articles, 24 refereed
 proceeding articles, 3 letters, 21 journal review articles, and 28 book
 chapters.
 
-Please see [Research]({{ site.baseurl }}{% link softwares.html %}) section for selected publications.
+Please see [Research]({{ site.baseurl }}{% link research.md %}) section for selected publications.
 
 **Books (2):**
 
