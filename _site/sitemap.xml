@@ -63,6 +63,10 @@
 <lastmod>2020-11-16T21:12:06-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/GenoCanyon_Index.html</loc>
+<lastmod>2020-11-16T21:28:12-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/GenoCanyon_Prediction.html</loc>
 <lastmod>2020-11-16T21:09:25-05:00</lastmod>
 </url>
@@ -73,6 +77,10 @@
 <url>
 <loc>http://localhost:4000/GenoWAP.html</loc>
 <lastmod>2020-11-16T16:14:25-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/Software_Zhaocenter/GWASPC/example.html</loc>
+<lastmod>2020-11-16T21:31:24-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/reveal.js/</loc>
