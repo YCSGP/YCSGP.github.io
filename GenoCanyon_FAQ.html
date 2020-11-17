@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GenoCanyon FAQ</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="GenoCanyon_Home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="Wrapper">
+  <header id="Top">
+    <h1>G<span class="h1_smaller">ENO</span>C<span class="h1_smaller">ANYON</span></h1>
+    <nav id="Nav">
+      <ul>
+        <li>
+          <h3><a href="index.html">Home</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_Prediction.html">Prediction</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_Downloads.html">Downloads</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_FAQ.html" class="thispage">FAQ</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_AboutUs.html">About Us</a></h3>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article id="Main">
+    <h2><strong>Frequently Asked Questions</strong></h2>
+    <p><strong>Why don't my prediction results show properly in the GenoCanyon Web Application?</strong></p>
+    <p>There are several possible reasons. Did you select a region larger than 3 million bp? Does your highlighted sub-region reside in the large region? Is your stop coordinate smaller than the start coordinate? If your answer is YES to any of these questions, it might have caused the display error.    </p>
+    <p><strong>Why is there a limit of 3M bp in the web application?</strong></p>
+    <p>If the region is too large, it takes longer time to generate the plot. More importantly, all the functional peaks will be squeezed together so that it becomes hard to recognize the functional patterns in the region. However, when the region has a moderate size, the canyon plots would be a very intuitive way to show functional elements.</p>
+    <p><strong>Why does the WebApp freeze after I click the submit button?</strong></p>
+    <p>If a user submit a large query right before you, you may need to wait for that job to finish. Also, if you submit a large query. It might take us a while to prepare the data for you. However, since we limit the region size to be smaller than 3M bp, both cases would not take too long time. Please be patient and do not click the submit button multiple times.</p>
+    <p><strong>Which genome assembly does GenoCanyon use?</strong></p>
+    <p>Currently, we only support hg19.</p>
+    <p><strong>What is the meaning of the "0.5 cutoff" used in your paper to estimate the functional fraction in the human genome? What happens if, for instance, you set the cutoff at 0.1 or 0.75 instead of 0.5?</strong></p>
+    <p>The posterior probability we used to measure the functional potential of each nucleotide has a very clear bimodal distribution. This can be seen from Fig.2a in our paper. For example, the panel on the left of Fig.2a shows the histogram of posterior score on the entire chromosome 11. We can see that about 60% of the nucleotides have a very low score, while about 30% of chr11 have a score above 0.9. This means that although our functional score has a very nice probabilistic interpretation, the algorithm is essentially doing model-based clustering. Whether a genomic locus is functional or non-functional is pretty clear based on our prediction, and is not sensitive to the choice of cutoff.</p>
+    <p>&nbsp;</p>
+  </article>
+  <aside id="Sidebar">
+    <h2><strong>Contact Us</strong></h2>
+    <p>Please send your questions to the corresponding authors of our paper.</p>
+    <p>&nbsp;</p>
+  </aside>
+  <footer id="citation">Lu, Q. et al. (2015). A Statistical Framework to Predict Functional Non-Coding Regions in the Human Genome Through Integrated Analysis of Annotation Data. <i>Sci. Rep.</i> 5, 10576.</footer>
+  <div id="copyright">© 2014 Yale University, All Rights Reserved</div>
+</div>
+</body>
+</html>

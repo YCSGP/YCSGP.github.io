@@ -1,3 +1,8 @@
+- name: Gang Peng
+  photo: yale.jpg
+  info: Associate Research Scientist, started June 2015
+  email: gang.peng@yale.edu
+
 - name: Wei Jiang
   photo: weijiang.jpg
   info: Postdoctoral Associate, started in 2018
@@ -6,6 +11,16 @@
   education1: PhD/Postdoc in Electronic and Computer Engineering, HKUST
   education2: B.Eng. in Automation, Tsinghua University
   education3: APBC 2016 Best Paper Award
+
+- name: Cecilia Dao
+  photo: yale.jpg
+  info: Postdoctoral Associate, started in 2018
+  email: cecilia.dao@yale.edu
+
+- name: Kelson Zawack
+  photo: yale.jpg
+  info: Postdoctoral Associate, started in 2018
+  email: kelson.zawack@yale.edu
 
 - name: Jianlei Gu
   photo: jianlei.jpg
@@ -24,3 +39,10 @@
   number_educ: 2
   education1: Ph.D. in Biostatistics, George Washington University 
   education2: Ph.D. in Computer Science, Fudan Univeristy
+
+- name: Yunan Wu
+  photo: yale.jpg
+  info: Postdoctoral Associate, started in 2020
+  email: yunan.wu@yale.edu
+  number_educ: 0
+  
