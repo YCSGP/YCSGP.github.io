@@ -67,7 +67,7 @@ layout: gridlay
 </div>
 {% endif %}
 
-## Postdocs & Associate Research Scientist
+## Research Scientist & Postdocs
 {% assign number_printed = 0 %}
 {% for member in site.data.current_postdocs_ars %}
 
