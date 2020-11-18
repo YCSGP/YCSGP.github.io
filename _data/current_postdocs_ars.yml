@@ -1,3 +1,11 @@
+- name: Ning Sun
+  photo: ning.jpg
+  info: Research Scientist
+  email: ning.sun@yale.edu
+  number_educ: 2
+  education1: B.S. in Civil and Environmental Engineering, Tsinghua University
+  education2: Ph.D. in Environmental Engineering, University of California at Los Angeles
+
 - name: Gang Peng
   photo: yale.jpg
   info: Associate Research Scientist, started June 2015
