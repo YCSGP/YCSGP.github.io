@@ -1,26 +1,3 @@
-- name: Ming Chen
-  photo: ming.jpg
-  info: PhD Student, Biostatistics, started August 2016
-  email: ming.chen.mc2792@yale.edu
-  number_educ: 1
-  education1: B.S. Bioinformatics, Shanghai Jiao Tong University
-
-- name: Wenxuan (Emma) Deng
-  photo: wenxuan.jpg
-  info: PhD Student, Biostatistics, started August 2016
-  email: wenxuan.deng@yale.edu
-  number_educ: 1
-  education1: B.S., Department of Mathematics, Tsinghua University
-
-- name: Daiwei Tang
-  photo: daiwei.jpg
-  info: PhD Student, Biostatistics, started August 2016
-  email: daiwei.tang@yale.edu
-  number_educ: 2
-  education1: B.S. in Biological Science and minor in Computer Science, Tsinghua University
-  education2: Interested in computational methods for cancer genomics and immunomics, deconvolution algorithms, optimization algorithms
-  education3: twitter.com/DaiweiTang
-  
 - name: Jiawei Wang
   photo: jiawei.jpg
   info: PhD Student, Computational Biology, started August 2016
