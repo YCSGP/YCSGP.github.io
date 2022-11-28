@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Discovery of pathways responsive</title>
+</head>
+
+<body>
+
+<div style="position: absolute; width: 1325px; height: 49px; z-index: 1; left: 10px; top: 15px" id="layer1">
+	<b><font face="Arial" size="6" color="#008000">Welcome to the homepage of 
+	FacPad!</font></b><hr>
+	<p><font face="Arial" size="5">FacPad is the inference of <i><b>Pa</b></i>thways 
+	responsive to <b><i>d</i></b>rug treatment via Bayesian sparse <i><b>Fac</b></i>tor 
+	modeling. </font></p>
+	<p><font face="Arial" size="5">It requires two matrices as input datasets. 
+	The first matrix Y is the gene expression ratios before and after drug 
+	treatment. It has dimension G×J, where G is the number of probesets measured 
+	by the specific microarray platform and J is the number of different 
+	treatments (usually, a treatment is combination of certain drug, 
+	concentration, and treatment time). The second matrix L is the binary 
+	pathway structure matrix of dimension G×K, where K is the number of pathways 
+	associated with the probesets, with L<sub>g,k</sub>=1 representing that the 
+	g-th probeset is mapped to the k-th pathway and L<sub>g,k</sub>=0 otherwise. 
+	FacPad models each pathway as a latent factor which is the weighted 
+	combination of its associated probesets, and decomposes the matrix Y into 
+	loading matrix W (G×K) and factor activity matrix X (K×J):</font><p>　<p>
+	<img border="0" src="slides-3-13.png" width="823" height="365"><p>
+	<font face="Arial" size="4">Figure. Illustration of the bayesian sparse 
+	factor model used for the analysis of treatment response data. </font>
+	<p>
+	<font face="Arial" size="4">The sparse structure of loading matrix W is 
+	determined by prior binary matrix L.</font><p>　<p>
+	<font face="Arial" size="6">Dataset</font><p><font face="Arial">MIcroarray 
+	expression data before and after drug treatment was downloaded from the 
+	Connectivity Map database:<a href="http://www.broadinstitute.org/cmap/cel_file_chunks.jsp">http://www.broadinstitute.org/cmap/cel_file_chunks.jsp</a></font><p>
+	<font face="Arial">Pathways associated with the probesets were derived using 
+	the functional annotation function of the <span style="font-weight: bold;">D</span>atabase 
+	for <span style="font-weight: bold;">A</span>nnotation,
+	<span style="font-weight: bold;">V</span>isualization and<span style="font-weight: bold;"> 
+	I</span>ntegrated <span style="font-weight: bold;">D</span>iscovery (<span style="font-weight: bold;">DAVID</span>):</font><p>
+	<font face="Arial"><a href="http://david.abcc.ncifcrf.gov/summary.jsp">
+	http://david.abcc.ncifcrf.gov/summary.jsp</a></font><p>　<p>
+	<font face="Arial" size="6">Software</font><p><font face="Arial">The 
+	bayesian sparse factor model is implemented as the R package &quot;FacPad&quot; on 
+	CRAN:</font><p><font face="Arial">
+	<a href="http://cran.open-source-solution.org/web/packages/FacPad/">http://cran.open-source-solution.org/web/packages/FacPad/</a></font><p>　<p>　</div>
+
+<p>　</p>
+<p>　</p>
+
+</body>
+
+</html>
