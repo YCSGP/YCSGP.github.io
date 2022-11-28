@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GenoCanyon Prediction</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="GenoCanyon_Home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="Wrapper">
+  <header id="Top">
+    <h1>G<span class="h1_smaller">ENO</span>C<span class="h1_smaller">ANYON</span></h1>
+    <nav id="Nav">
+      <ul>
+        <li>
+          <h3><a href="GenoCanyon_Index.html">Home</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_Prediction.html" class="thispage">Prediction</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_Downloads.html">Downloads</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_FAQ.html">FAQ</a></h3>
+        </li>
+        <li>
+          <h3><a href="GenoCanyon_AboutUs.html">About Us</a></h3>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article id="Main">
+    <h2><strong>GenoCanyon Web Application</strong></h2>
+    <p>We developed a WebApp for GenoCanyon using the shiny package in RStudio. It is designed for analyzing genomic regions of moderate size. The prediction score in the selected region is plotted, showing the functional potential of different segments in this region. You can also choose to highlight a sub-region using a different color. Boxplots and summary statistics are also generated to help decide whether the highlighted sequence is an important segment in this region. The default setting of the WebApp is the HBB gene complex (Chr11: 5225000 - 5320000; hg19).</p>
+    <p>Click <strong><a href="http://genocanyon.med.yale.edu:7772" class="WebApp">HERE</a></strong> to use the GenoCanyon WebApp.</p>
+    <figure class="floatleft"><img src="figures/WebApp.png" alt=""/>
+      <figcaption>The user interface of GenoCanyon WebApp</figcaption>
+    </figure>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </article>
+  <aside id="Sidebar">
+    <h2><strong>Tips</strong></h2>
+    <p>For regions larger than 3M bp, we suggest you to download the data and analyze them on your local device. </p>
+    <p>&nbsp;</p>
+  </aside>
+  <footer id="citation">Lu, Q. et al. (2015). A Statistical Framework to Predict Functional Non-Coding Regions in the Human Genome Through Integrated Analysis of Annotation Data. <i>Sci. Rep.</i> 5, 10576.</footer>
+  <div id="copyright">© 2014 Yale University, All Rights Reserved</div>
+</div>
+</body>
+</html>
