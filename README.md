@@ -1,4 +1,4 @@
-# Research Lab Website  
+# Zhao Lab Website  
 
 This repository hosts the official website for our research lab. Below is the structure of the site, including links to key sections.  
 
