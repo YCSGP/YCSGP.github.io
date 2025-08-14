@@ -13,7 +13,8 @@ Our research spans multiple areas in genetics and genomics, including:
 - [Single-Cell Genomics](./singlecell.html)  
 - [Whole Exome Sequencing (WES)](./WES.html)  
 - [Genetic Risk Prediction](./GRP.html)  
-- [Network-Based Approaches](./networks.html)  
+- [Network-Based Approaches](./networks.html)
+- [Drug Development](./drug_dev.html)  
 - [Collaborations](./collaborations.html)  
 
 ### People  
