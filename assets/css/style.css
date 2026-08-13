@@ -337,7 +337,7 @@ Navbar Area CSS
 }
 
 .main-navbar .navbar .navbar-brand img {
-  max-width: 120px !important;
+  max-width: 260px !important;
 }
 
 .main-navbar .navbar .navbar-nav {
@@ -1117,7 +1117,7 @@ Navbar Area CSS
     position: relative;
   }
   .main-responsive-nav .logo img {
-    max-width: 100px !important;
+    max-width: 200px !important;
   }
   .navbar-area {
     background-color: #ffffff;
