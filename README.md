@@ -1,4 +1,4 @@
-# Zhao Lab Website  
+# Center for Statistical Genomics and Proteomics Website
 
 This repository hosts the official website for our research lab. Below is the structure of the site, including links to key sections.  
 
@@ -28,4 +28,4 @@ Our research spans multiple areas in genetics and genomics, including:
 - [Photo Gallery](./events.html) – A showcase of lab events and activities.  
 
 ## Contributing  
-For contributions, updates, or bug reports, please submit a pull request or open an issue in this repository.  
+For contributions, updates, or bug reports, please submit a pull request or open an issue in this repository.
