@@ -1927,6 +1927,12 @@ Team Area CSS
     .image {
         position: relative;
         transition: $transition;
+        img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            object-position: center;
+        }
         .social {
             padding-left: 0;
             list-style-type: none;
